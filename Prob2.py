@@ -1,5 +1,5 @@
 print("Enter a whole number to be printed in Standard Factored Form: ")
-num = input(int)
+num = int(input())
 a = []
 while num % 2 == 0:
     a.append(2)
@@ -11,7 +11,6 @@ while f * f <= num:
         num /= f
     else:
         f += 2
-if num != 1: a.append(num)
+if num != 1: a.append(int(num))
 # Only odd number is possible
 print (a)
-
